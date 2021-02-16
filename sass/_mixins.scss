@@ -1,0 +1,27 @@
+
+//background-images
+
+@mixin bg-img($image, $x: 50%, $y: 50%) {
+  min-height:50vh;
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    position: $x $y;
+    size:cover;
+  }
+}
+
+
+
+// Background Gradient: Top to Bottom
+@mixin bg-gradient($start-colour, $end-colour) {
+    background-color: $start-colour;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
+    background-image: -webkit-linear-gradient(top, $start-colour, $end-colour);
+    background-image:    -moz-linear-gradient(top, $start-colour, $end-colour);
+    background-image:     -ms-linear-gradient(top, $start-colour, $end-colour);
+    background-image:      -o-linear-gradient(top, $start-colour, $end-colour);
+    background-image:         linear-gradient(top, $start-colour, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+}
+
