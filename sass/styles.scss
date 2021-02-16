@@ -16,6 +16,11 @@ html, body {
   background-color: $white;
 }
 
+.page-wrapper{
+	overflow-x: hidden;
+	overflow-y:hidden;
+}
+
 a, p,li{ 
   font-family:$primary-font; 
   font-size:18px; 

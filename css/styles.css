@@ -10,6 +10,10 @@ html, body {
   scroll-behavior: smooth;
   background-color: #f9f6f1; }
 
+.page-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
 a, p, li {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
