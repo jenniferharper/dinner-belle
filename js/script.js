@@ -3,6 +3,8 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.to("#logo",0,{scale: 1 });
+
 function resize() {
   let ximg = document.getElementById('logo'); 
   let imgHeight = ximg.clientHeight;
@@ -10,6 +12,7 @@ function resize() {
   gsap.to('.logo-container', { css:{height: imgHeight}});
   gsap.to('.header-background', {css:{height: imgHeight}});
 }
+
 ScrollTrigger.addEventListener("refreshInit", resize);
 resize();
 
